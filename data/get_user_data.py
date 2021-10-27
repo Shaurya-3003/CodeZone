@@ -43,7 +43,7 @@ if __name__ == '__main__':
     conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
     
     with conn.cursor() as cursor:
-        for i in range(50, 100):
+        for i in range(401, 501):
             userName = sheet['A' + str(i)].value
             result = getJson(userName)
             try:
